@@ -1,0 +1,162 @@
+/* .wrapper>div{
+    top: 150px;
+    left: 150px;
+    position: absolute;
+    width: 200px;height: 200px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    border: 2px solid black;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    transform-style: preserve-3d;
+    /* transform: rotateX(30deg) rotateY(30deg); */
+
+/* }
+.qian{
+    width: 200px;height: 200px;
+    background: blue;
+    transform: translateZ(100px);
+}
+.hou{
+    width: 200px;height: 200px;
+    background: rgb(255, 0, 242);
+    transform: translateZ(-100px) rotatey(-180deg);
+}
+
+.zuo{
+    width: 200px;height: 200px; */
+    /* background: rgb(98, 230, 115);
+    transform: translateX(-100px) rotateY(-90deg);
+}
+.you{
+    width: 200px;height: 200px;
+    background: rgb(147, 233, 36);
+   transform: translateX(100px) rotateY(90deg);
+}
+.shang{
+    width: 200px;height: 200px;
+    background: rgb(233, 139, 32);
+    transform: translateY(-100PX) rotateX(90deg);
+}
+.xia{
+    width: 200px;height: 200px;
+    background: rgb(236, 49, 49);
+    transform: translateY(100px) rotateX(-90deg);
+} */ 
+.box{
+    width: 500px;height: 500px;
+    /* background-image: url(../img/清.jpg); */
+    background-size: 800px auto;
+    padding: 100px;
+    margin: 100px auto;
+    perspective: 800;
+    -webkit-perspective: 800;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    width: 200px;height: 200px;
+    /* transition: 5s; */
+    position: relative;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+    /* line-height: 500px; */
+}
+.box .div{
+    transform: rotateY(30deg) rotateX(30deg);
+}
+.div div{
+    position: absolute;
+    width: 200px;height: 200px;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    font: 100px/200px '宋体';
+    text-align: center;
+    color: #fff;
+    height: 200px;
+    /* text-shadow: greenyellow 5px 5px;
+    box-shadow: indigo 6px 6px; */
+}
+.div .qian{
+    background: red;
+    transform: rotateY(0) translateZ(100px);
+    transition: 0.75s;
+    
+}
+.div .hou{
+    background: rgb(221, 64, 174);
+    transform: rotateY(90deg) translateZ(100px);
+    transition: 0.75s;
+}
+.div .zuo{
+    background:blue;
+    transform: rotateY(180deg) translateZ(100px);
+    transition: 0.75s;
+}
+.div .you{
+    background: pink;
+    transform: rotateY(270deg) translateZ(100px);
+    transition: 0.75s;
+}
+.div .shang{
+    background: gold;
+    transform: rotateX(-90deg) translateZ(100px);
+    transition: 0.75s;
+}
+.div .xia{
+    background: green;
+    transform: rotateX(90deg) translateZ(100px);
+    transition: 0.75s;
+}
+    .box :hover div{
+        transform: rotateY(360deg) rotateX(360deg);
+        transition: 5s;
+    }
+    .div:hover .qian{
+        /* background-image:url(../img/清.jpg);
+        background-size: 100px auto; */
+        background: red;
+        transform: rotateY(0) translateZ(200px) scale(1.5);
+        box-shadow: lawngreen 0px 0px 80px,gold 0 0 80px,purple 0 0 30px;
+    }
+    .div:hover .hou{
+        /* background-image: url(../img/花.jpeg);
+        background-size: 100px auto; */
+        background: rgb(221, 64, 174);
+        transform: rotateY(90deg) translateZ(200px) scale(1.5);
+        box-shadow: rgb(107, 55, 230) 0px 0px 80px,gold 0 0 60px;
+    }
+    .div:hover .zuo{
+        /* background-image: url(../img/花2.jpeg); */
+        /* background-size: 100px auto; */
+        background:blue;
+        transform: rotateY(180deg) translateZ(200px) scale(1.5);
+        box-shadow: rgb(57, 214, 235) 0px 0px 80px;
+    }
+    .div:hover .you{
+        /* background-image: url(../img/小.jpg); */
+        /* background-size: 100px auto; */
+        background: pink;
+        transform: rotateY(270deg) translateZ(200px) scale(1.5);
+        box-shadow: rgb(243, 43, 43) 0px 0px 80px;
+    }
+    .div:hover .shang{
+        /* background-image: url(../img/剪刀.jpg);
+        background-size: 100px auto; */
+        background: gold;
+        transform: rotateX(-90deg) translateZ(200px) scale(1.5);
+        box-shadow: rgb(39, 92, 238) 0px 0px 80px;
+    }
+    .div:hover .xia{
+        /* background-image: url(../img/47afb52f61619bac.jpg);
+        background-size: 500px auto; */
+        background: green;
+        transform: rotateX(90deg) translateZ(200px) scale(1.5);
+        box-shadow: rgb(243, 183, 19) 0px 0px 80px;
+    }
